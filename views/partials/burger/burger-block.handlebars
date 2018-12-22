@@ -1,0 +1,13 @@
+
+<li class="list-group-item">
+	<strong>{{burger_name}}</strong>
+
+	<button class="change-burger btn btn-primary btn-sm" data-id="{{id}}" data-newdevo="{{devoured}}">
+		{{#if devoured}}devoured{{else}}Devoured{{/if}}
+	</button>
+
+	
+	{{#if devoured}}{{else}}
+	<button class="btn btn-danger delete-burg btn-sm" data-id="{{this.id}}">DELETE Burger!</button>
+	{{/if}}
+</li>
